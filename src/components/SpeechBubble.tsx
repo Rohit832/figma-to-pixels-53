@@ -6,7 +6,7 @@ interface SpeechBubbleProps {
 
 export const SpeechBubble: React.FC<SpeechBubbleProps> = ({ className = '' }) => {
   return (
-    <div className={`w-[599px] h-[558px] relative max-md:w-full max-md:max-w-[400px] max-md:h-[300px] max-sm:h-[200px] ${className}`}>
+    <div className={`relative w-full max-w-[320px] h-[220px] sm:max-w-[380px] sm:h-[260px] md:max-w-[480px] md:h-[420px] lg:max-w-[520px] lg:h-[480px] xl:max-w-[599px] xl:h-[558px] ${className}`}>
       <svg 
         width="599" 
         height="559" 

@@ -31,17 +31,17 @@ export const PlatformSection: React.FC = () => {
   ];
 
   return (
-    <section className="w-full h-auto mx-auto my-0 p-5 md:p-6 flex flex-col lg:flex-row items-start gap-6">
-      <div className="flex items-center gap-[5px] relative w-full lg:w-[327px] lg:max-w-[500px]">
+    <section className="container mx-auto w-full h-auto my-0 p-5 md:p-6 flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between gap-8">
+      <div className="flex items-center gap-[5px] relative w-full lg:w-[327px] lg:max-w-[500px] mx-auto lg:mx-0">
         <ProgressIndicator />
         
-        <div className="flex w-full lg:w-[271px] flex-col items-start gap-[45px] shrink-0 relative">
-          <header className="self-stretch text-black text-[19px] font-normal tracking-[1.344px] relative max-sm:text-base max-sm:text-center">
+        <div className="flex w-full lg:w-[271px] flex-col items-center lg:items-start gap-[45px] shrink-0 relative">
+          <header className="w-full text-black text-[19px] font-normal tracking-[1.344px] relative max-sm:text-base text-center lg:text-left">
             One platform multiple touchpoints
           </header>
           
-          <div className="flex flex-col items-start gap-[38px] self-stretch relative pl-10 max-sm:gap-[25px] max-sm:pl-5">
-            <h1 className="w-full lg:w-[260px] text-black text-[27px] font-normal leading-6 relative md:text-2xl md:leading-[22px] max-sm:text-xl max-sm:leading-5 max-sm:text-left">
+          <div className="flex flex-col items-center lg:items-start gap-[38px] self-stretch relative lg:pl-10 max-sm:gap-[25px] max-sm:pl-5">
+            <h1 className="w-full lg:w-[260px] text-black text-[27px] font-normal leading-6 relative md:text-2xl md:leading-[22px] max-sm:text-xl max-sm:leading-5 text-center lg:text-left">
               We support students, no matter what they're dealing with.
             </h1>
             
@@ -52,7 +52,7 @@ export const PlatformSection: React.FC = () => {
               </svg>
             </div>
             
-            <div className="flex flex-col items-start gap-5 self-stretch relative">
+            <div className="flex flex-col items-center lg:items-start gap-5 self-stretch relative">
               {services.map((service, index) => (
                 <ServiceItem
                   key={index}
@@ -68,7 +68,7 @@ export const PlatformSection: React.FC = () => {
         </div>
       </div>
       
-      <SpeechBubble className="w-full" />
+      <SpeechBubble className="w-full mx-auto lg:mx-0 lg:flex-1" />
     </section>
   );
 };

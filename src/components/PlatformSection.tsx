@@ -31,7 +31,7 @@ export const PlatformSection: React.FC = () => {
           </header>
           
           <div className="flex flex-col items-center lg:items-start gap-[38px] self-stretch relative lg:pl-10 max-sm:gap-[25px] max-sm:pl-5">
-            <h1 className="w-full lg:w-[260px] text-black text-[27px] font-normal leading-6 relative md:text-2xl md:leading-[22px] max-sm:text-xl max-sm:leading-5 text-center lg:text-left">
+            <h1 className="w-full lg:w-[260px] text-black text-[27px] font-normal leading-6 relative md:text-2xl md:leading-[22px] max-sm:text-xl max-sm:leading-5 lg:text-left text-left">
               We support students, no matter what they're dealing with.
             </h1>
             

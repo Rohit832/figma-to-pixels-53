@@ -31,17 +31,17 @@ export const PlatformSection: React.FC = () => {
   ];
 
   return (
-    <section className="max-w-none flex items-center gap-[18px] w-[944px] h-[573px] mx-auto my-0 p-5 max-md:max-w-[991px] max-md:flex-col max-md:w-full max-md:h-auto max-md:gap-[30px] max-md:p-5 max-sm:max-w-screen-sm max-sm:gap-5 max-sm:p-[15px]">
-      <div className="flex w-[327px] items-center gap-[5px] relative max-md:w-full max-md:max-w-[500px]">
+    <section className="w-full h-auto mx-auto my-0 p-5 md:p-6 flex flex-col lg:flex-row items-start gap-6">
+      <div className="flex items-center gap-[5px] relative w-full lg:w-[327px] lg:max-w-[500px]">
         <ProgressIndicator />
         
-        <div className="flex w-[271px] flex-col items-start gap-[45px] shrink-0 relative max-md:w-full">
+        <div className="flex w-full lg:w-[271px] flex-col items-start gap-[45px] shrink-0 relative">
           <header className="self-stretch text-black text-[19px] font-normal tracking-[1.344px] relative max-sm:text-base max-sm:text-center">
             One platform multiple touchpoints
           </header>
           
           <div className="flex flex-col items-start gap-[38px] self-stretch relative pl-10 max-sm:gap-[25px] max-sm:pl-5">
-            <h1 className="w-[260px] text-black text-[27px] font-normal leading-6 relative max-md:w-full max-md:text-2xl max-md:leading-[22px] max-sm:text-xl max-sm:leading-5 max-sm:text-left">
+            <h1 className="w-full lg:w-[260px] text-black text-[27px] font-normal leading-6 relative md:text-2xl md:leading-[22px] max-sm:text-xl max-sm:leading-5 max-sm:text-left">
               We support students, no matter what they're dealing with.
             </h1>
             
@@ -68,7 +68,7 @@ export const PlatformSection: React.FC = () => {
         </div>
       </div>
       
-      <SpeechBubble />
+      <SpeechBubble className="w-full" />
     </section>
   );
 };
